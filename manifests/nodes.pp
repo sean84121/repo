@@ -1,5 +1,3 @@
-node 'default' {
-	file { '/tmp/hello2':
-		content => "test hello\n",
-	}
+node 'centos43', 'centos44' {
+	include puppet
 }
